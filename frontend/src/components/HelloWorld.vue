@@ -80,6 +80,8 @@
         </a>
       </li>
     </ul>
+
+    <v-selectpage :data="list" key-field="id" show-field="name" class="form-control"></v-selectpage>
   </div>
 </template>
 
@@ -88,7 +90,11 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      list: [
+        {id:1 ,name:'Chicago Bulls',desc:'芝加哥公牛'},
+        {id:2 ,name:'Cleveland Cavaliers',desc:'克里夫兰骑士'}
+      ]
     }
   }
 }

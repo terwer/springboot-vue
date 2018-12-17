@@ -2,8 +2,11 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import vSelectPage from 'v-selectpage';
 
 Vue.config.productionTip = false
+
+Vue.use(vSelectPage, {});
 
 /* eslint-disable no-new */
 new Vue({
